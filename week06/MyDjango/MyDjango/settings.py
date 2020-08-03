@@ -25,6 +25,7 @@ SECRET_KEY = '&m-a!c34@11qvfo$g5t%7b%$-^dyh$l%ge@=gd-oo6g%t*i54$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# 域名访问权限
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'index',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +81,20 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'test',
+#         'USER': 'root',
+#         'PASSWORD': '123456',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+#
+#     # 'database2':{
+#     #
+#     # }
+# }
 
 
 # Password validation
@@ -105,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTF'
 
 USE_I18N = True
 
